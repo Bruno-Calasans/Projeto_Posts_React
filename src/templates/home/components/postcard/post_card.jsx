@@ -1,6 +1,6 @@
 
 import {Component} from 'react'
-import * as postCardCSS from './post_card.css'
+import './post_card.css'
 
 export class Post extends Component{
 

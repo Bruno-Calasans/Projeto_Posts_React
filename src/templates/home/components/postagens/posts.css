@@ -1,0 +1,30 @@
+.posts{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    gap: 25px;
+}
+
+/* 4 colunas se a largura for de 1000px ou mais*/
+@media (min-width: 1000px){
+    .posts{
+        width: 1200px;
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+/* 2 colunas se largura for de 999px até 401px*/
+@media (max-width: 999px){
+    .posts{
+        grid-template-columns: auto auto;
+    } 
+}
+
+/* 1 coluna se alargura for de 400px ou menos*/
+@media (max-width: 400px){
+    
+    .posts{
+        grid-template-columns: auto;
+    } 
+}
